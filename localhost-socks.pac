@@ -4,6 +4,6 @@ function FindProxyForURL(url, host)
      if (isInNet(host, "172.16.0.0", "255.240.0.0")) return "DIRECT";
      if (isInNet(host, "10.0.0.0", "255.0.0.0")) return "DIRECT";
      if (isInNet(host, "127.0.0.0", "255.255.255.0")) return "DIRECT";
-     return "SOCKS5 127.0.0.1:1337";
+     return "SOCKS 127.0.0.1:1337";
 }
 
